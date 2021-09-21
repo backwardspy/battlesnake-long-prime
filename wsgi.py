@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     run_simple(
         hostname="0.0.0.0",
-        port=80,
+        port=6502,
         application=application,
         use_reloader=True,
         use_debugger=False,

@@ -2,8 +2,12 @@
 https://docs.battlesnake.com/references/api#object-definitions
 """
 
-import humps
 import pydantic
+
+
+def to_camel_case(snake_str):
+    components = snake_str.split('_')
+    return components[0] + ''.join(x.title() for x in components[1:])
 
 
 class Model(pydantic.BaseModel):
@@ -14,7 +18,7 @@ class Model(pydantic.BaseModel):
         """
         Pydantic model configuration.
         """
-        alias_generator = humps.camelize
+        alias_generator = to_camel_case
 
 
 class RoyaleSettings(Model):
