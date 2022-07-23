@@ -1,7 +1,7 @@
 import falcon
 
-from snake import models, game
-from config import settings
+from battlesnake_long_prime import game, models
+from battlesnake_long_prime.settings import settings
 
 
 class Root:

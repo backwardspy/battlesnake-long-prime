@@ -1,6 +1,6 @@
 import math
 
-from snake import models
+from battlesnake_long_prime import models
 
 
 def step(coord: models.Coordinate, direction: str) -> models.Coordinate:

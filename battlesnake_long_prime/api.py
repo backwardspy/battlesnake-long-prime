@@ -1,6 +1,6 @@
 import falcon
 
-from snake import views
+from battlesnake_long_prime import views
 
 
 def create_app() -> falcon.App:

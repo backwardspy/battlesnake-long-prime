@@ -1,4 +1,4 @@
-from snake.api import create_app
+from battlesnake_long_prime.api import create_app
 
 application = create_app()
 

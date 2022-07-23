@@ -10,25 +10,16 @@ license = "MIT"
 authors = ["backwardspy <backwardspy@gmail.com>"]
 
 [tool.poetry.dependencies]
-falcon = "^3.0.1"
+falcon = "^3.1.0"
 gunicorn = "^20.1.0"
 python = "^3.8"
-Werkzeug = "^2.0.1"
-pydantic = "^1.8.2"
+pydantic = "^1.9.1"
 
 [tool.poetry.group.dev.dependencies]
-black = "^21.9-beta.0"
-mypy = "^0.910"
-pytest = "^6.2.5"
-ptpython = "^3.0.20"
-pylint = "^2.11.1"
-
-
-[tool.poetry.dev-dependencies]
-Werkzeug = "^2.0.1"
-black = "^21.9b0"
-isort = "^5.9.3"
-pylint = "^2.11.1"
+black = "^22.6.0"
+mypy = "^0.971"
+pylint = "^2.14.5"
+Werkzeug = "^2.1.2"
 
 [tool.black]
 line-length = 88
@@ -43,3 +34,6 @@ disable = [
     "no-member",
     "too-few-public-methods",
 ]
+
+[tool.mypy]
+ignore_missing_imports = true
